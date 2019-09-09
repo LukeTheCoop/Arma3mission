@@ -1,16 +1,13 @@
 params ["_player", "_JIP"];
-
+_car = 2;
 //Calling scripts
 0 = [_player] execVM "cars\init.sqf";
 0 = [_player] execVM "weapons\init.sqf";
 0 = [_player] execVM "medic\init.sqf";
 0 = [_player] execVM "easterEggs\init.sqf";
-0 = [_player] execVM "teleportGuy\init.sqf";
 0 = [_player] execVM "spawn\init.sqf";
 0 = [_player] execVM "admin\init.sqf";
-0 = [_player] execVM "admin\init.sqf";
-0 = [_player] execVM "medic\heal.sqf";
-
+0 = [_player] execVM "guide\init.sqf";
 //join no group
 _player addEventHandler ["InventoryOpened", 
 {
@@ -29,6 +26,3 @@ _player addEventHandler ["Dammaged",
 _player setPos (getPos spawner); 
 
 //hinting the welcome message 
-hint format ["Welcome, %1", _player];
-sleep 35;
-hint "There is someone looking for you at sofia...";

@@ -1,26 +1,7 @@
-
-/*
-_unit = player;
-_vendor = vehicleVendor;
-
-createDialog "carVendor";
-
-
-_ctrl = (findDisplay 9999) displayCtrl 10;
-
-vehicleArray = ["Quadbike", "Offroad", "SUV"];
-
-{
-	_name = str _x;
-	lbAdd [10, _name];
-} forEach vehicleArray;
-*/
-
-/* WORK IN PROGRESS */
-_vehicleArray = "getText (_x >> 'textSingular') == 'car' && getNumber (_x >> 'scope') == 2" configClasses (configFile >> "CfgVehicles");
+_vehicleArray = "getText (_x >> 'textSingular') == 'helicopter' && getNumber (_x >> 'scope') == 2" configClasses (configFile >> "CfgVehicles");
 _carArray = [];
 //"textSingular" = "car"
-createDialog "carVendor";
+createDialog "heliVendor";
 
 _sortVehicles = 
 {
@@ -42,8 +23,8 @@ _sortVehicles =
 _vehicleArray = [_vehicleArray] call _sortVehicles;
 
 {
-	_carName = getText (configFile >> "CfgVehicles" >> _x >> "displayname");
-	lbAdd[10, _carName];
+	_heliName = getText (configFile >> "CfgVehicles" >> _x >> "displayname");
+	lbAdd[10, _heliName];
 	lbSetData [10, _forEachIndex, _x];
 }forEach _carArray;
 

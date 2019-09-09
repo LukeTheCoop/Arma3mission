@@ -3,14 +3,14 @@ params ["_player"];
 _guide = guide;
 
 //DISABLE AI
-	_vendor disableAI "WEAPONAIM";
-	_vendor disableAI "PATH";
-	_vendor disableAI "TARGET";
-	_vendor disableAI "COVER";
-	_vendor disableAI "ANIM";
-	_vendor disableAI "AUTOTARGET";
-	_vendor allowDamage false;
-	_vendor disableAI "AUTOCOMBAT";
-	_vendor disableAI "SUPPRESSION";
-	_vendor disableAI "ANIM";
-	_vednor disableAi "NVG";
+	_guide disableAI "WEAPONAIM";
+	_guide disableAI "PATH";
+	_guide disableAI "TARGET";
+	_guide disableAI "COVER";
+	_guide disableAI "ANIM";
+	_guide disableAI "AUTOTARGET";
+	_guide allowDamage false;
+	_guide disableAI "AUTOCOMBAT";
+	_guide disableAI "SUPPRESSION";
+	_guide disableAI "ANIM";
+	_guide disableAi "NVG";

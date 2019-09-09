@@ -13,6 +13,6 @@ _vendor = weopenVendor;
 	_vendor disableAI "AUTOCOMBAT";
 	_vendor disableAI "SUPPRESSION";
 	_vendor disableAI "ANIM";
-	_vednor disableAi "NVG";
+	_vendor disableAi "NVG";
 
 _vendor addAction ["Get Weapon", "[] call LuC_fnc_gunDialog", [], 6, false, true, "", "", 10];

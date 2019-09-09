@@ -6,5 +6,7 @@ class LuC {
 		class adminDialog {};
 		class gunDialog {};
 		class vehicleDialog {};
+		class heliDialog {};
+		class checkVehPoint {};
 	};
 };

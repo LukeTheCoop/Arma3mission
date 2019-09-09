@@ -3,7 +3,7 @@ disabledAI      = 1;
 author			= "Luke C";
 OnLoadName		= "Road to Developer";
 OnLoadMission	= "Lukes road to developer starts here...";
-loadScreen		= "images\lukethesup.paa";
+loadScreen      = "pictures\lukethecoop.jpg";
 maxPlayers      = 10;
 minPlayers      = 1;
 

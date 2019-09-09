@@ -1,6 +1,7 @@
 params["_player"];
 
 _vendor = vehicleVendor;
+_heli = heliGuy;
 
 
 //disableAI
@@ -13,9 +14,17 @@ _vendor disableAI "ANIM";
 _vendor disableAI "AUTOTARGET";
 _vendor allowDamage false;
 
+_heli disableAI "MOVE";
+_heli disableAI "WEAPONAIM";
+_heli disableAI "PATH";
+_heli disableAI "TARGET";
+_heli disableAI "COVER";
+_heli disableAI "ANIM";
+_heli disableAI "AUTOTARGET";
+_heli allowDamage false;
+
 _vendor addAction ["Spawncar", "[] call LuC_fnc_vehicleDialog", [], 6, false, true, "", "", 10];
-_vendor addAction ["Help?", {
-	hint "You are able to get vehicles from me, the man with the gun is the gun vendor where you can buy guns. You should explore and see if you can find anymore easter eggs...";
-	}];
+
+_heli addAction ["Spawn Heli", "[] call LuC_fnc_heliDialog", [], 6, false, true, "", "", 10];
 
 
