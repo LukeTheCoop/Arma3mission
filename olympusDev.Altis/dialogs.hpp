@@ -200,7 +200,7 @@ class playerSpawn
 {
 	idd = 9997;
 	movingEnabled = false;
-	//onLoad = "escKeyEH = (_this select 0) displayAddEventHandler [""KeyDown"", ""if (((_this select 1) == 1)) then {true};""];";
+	onLoad = "escKeyEH = (_this select 0) displayAddEventHandler [""KeyDown"", ""if (((_this select 1) == 1)) then {true};""];";
 
 	class controls {
 		////////////////////////////////////////////////////////
