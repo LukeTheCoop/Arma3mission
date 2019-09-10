@@ -2,6 +2,7 @@ params["_player"];
 
 _vendor = vehicleVendor;
 _heli = heliGuy;
+_plane = planeGuy;
 
 
 //disableAI
@@ -23,8 +24,17 @@ _heli disableAI "ANIM";
 _heli disableAI "AUTOTARGET";
 _heli allowDamage false;
 
-_vendor addAction ["Spawncar", "[] call LuC_fnc_vehicleDialog", [], 6, false, true, "", "", 10];
+_plane disableAI "MOVE";
+_plane disableAI "WEAPONAIM";
+_plane disableAI "PATH";
+_plane disableAI "TARGET";
+_plane disableAI "COVER";
+_plane disableAI "ANIM";
+_plane disableAI "AUTOTARGET";
+_plane allowDamage false;
 
-_heli addAction ["Spawn Heli", "[] call LuC_fnc_heliDialog", [], 6, false, true, "", "", 10];
 
+_vendor addAction ["Spawn car", "[] call LuC_fnc_vehicleDialog", [], 6, false, true, "", "", 10];
+
+_heli addAction ["Spawn heli", "[] call LuC_fnc_heliDialog", [], 6, false, true, "", "", 10];
 

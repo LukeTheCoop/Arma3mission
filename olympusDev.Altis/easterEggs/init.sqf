@@ -1,3 +1,4 @@
+/*
 params ["_player"];
 
 //lonely rock 
@@ -11,7 +12,7 @@ _weirdHouse_1 = weirdHouse_1;
 _weirdHouse_1 addaction ["Weird", {
 	hint "I dont think I am suppose to be here... all I remeber is the, incident";
 }];
-/*
+
 //Coffee
 _coffee = coffee;
 _coffee disableAI "MOVE";
