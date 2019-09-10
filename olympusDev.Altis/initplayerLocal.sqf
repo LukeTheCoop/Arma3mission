@@ -1,5 +1,5 @@
 params ["_player", "_JIP"];
-_car = 2;
+
 //Calling scripts
 0 = [_player] execVM "cars\init.sqf";
 0 = [_player] execVM "weapons\init.sqf";
