@@ -11,5 +11,5 @@ _heli setDir 44;
 hint format ["Spawned your helicopter!"];
 closeDialog 9995;
 } else {
-	hint "They is something blocking the spawn point!";
+	hint "There is something blocking the spawn point!";
 };
