@@ -4,12 +4,12 @@ _planeSpawn = getMarkerPos "planespawn";
 _trigger = planeTrigger;
 
 if (!triggerActivated _trigger) then {
-hint "Spawning your helicopter...";
+hint "Spawning your plane...";
 sleep 0.5;
 _plane = createVehicle [_plane, _planeSpawn];
 _plane setDir 44;
-hint format ["Spawned your helicopter!"];
+hint format ["Spawned your plane!"];
 closeDialog 9995;
 } else {
-	hint "They is something blocking the spawn point!";
+	hint "There is something blocking the spawn point!";
 };
