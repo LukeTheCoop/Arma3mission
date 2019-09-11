@@ -4,10 +4,11 @@ params ["_player", "_JIP"];
 0 = [_player] execVM "cars\init.sqf";
 0 = [_player] execVM "weapons\init.sqf";
 0 = [_player] execVM "medic\init.sqf";
-0 = [_player] execVM "easterEggs\init.sqf";
 0 = [_player] execVM "spawn\init.sqf";
 0 = [_player] execVM "admin\init.sqf";
 0 = [_player] execVM "guide\init.sqf";
+0 = [_player] execVM "teleport\init.sqf";
+0 = [_player] execVM "warzone\init.sqf";
 //join no group
 _player addEventHandler ["InventoryOpened", 
 {
@@ -24,5 +25,6 @@ _player addEventHandler ["Dammaged",
 }];
 
 _player setPos (getPos spawner); 
+
 
 //hinting the welcome message 

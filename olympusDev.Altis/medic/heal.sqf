@@ -1,4 +1,5 @@
-params ["_player"];
+_player = player;
+
 _medic = medic;
 
 

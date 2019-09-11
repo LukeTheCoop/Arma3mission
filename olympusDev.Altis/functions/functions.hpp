@@ -7,6 +7,11 @@ class LuC {
 		class gunDialog {};
 		class vehicleDialog {};
 		class heliDialog {};
-		class checkVehPoint {};
+		class planeDialog {};
+		class gameOpen {};
+		class gameOpen2 {};
+		class gameOpen3 {};
+		class gameOpen4 {};
+		class arWeapons {};
 	};
 };
