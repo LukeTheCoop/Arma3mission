@@ -51,6 +51,7 @@ if (!triggerActivated _trigger1) then {
 			closeDialog 9999;
 		} else {
 			hint "All garage points are currently being blocked!";
+			closeDialog 9999;
 		};
 	};
 };
