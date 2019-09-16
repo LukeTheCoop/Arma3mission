@@ -7,5 +7,7 @@ _medic = medic;
 	sleep 4;
 	_player setDamage 0;
 	hint "You are now healed!";
+	sleep 3.5;
+	hint "";
 
 
