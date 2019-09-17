@@ -55,5 +55,5 @@ if (!triggerActivated _trigger1) then {
 		};
 	};
 };
-sleep 5;
+sleep 10;
 hint "";
